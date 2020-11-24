@@ -23,3 +23,12 @@ def compute_factors(number):
       divisor += 1
 
     return factors
+
+def get_sum_factor(number):
+    factors = compute_factors(number) 
+    sum = 0
+    
+    for factor in factors:
+        sum = sum + factor
+
+    return sum
